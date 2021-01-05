@@ -1,6 +1,7 @@
 import modules from './modules/index';
 import { $debug, $canvasLeftOffset, cameraFrameSize } from './state';
 import { ASPECT_RATIO, FRAME_DURAITON } from './constants';
+import './lib/game3js-auth.js';
 
 const canvas = document.querySelector("canvas");
 const ctx = canvas.getContext("2d");
@@ -40,6 +41,8 @@ function tick() {
 };
 tick();
 
+
+console.log(G3JSAuth.CONSTANTS)
 
 // window.addEventListener('keydown', ({ key }) => {
 //   if(key === '`') {
